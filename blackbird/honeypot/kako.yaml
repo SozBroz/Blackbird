@@ -1,0 +1,15 @@
+---
+logging:
+  path: '/home/ubuntu/honeypot/logging/'
+
+simulations:
+  path: '/home/ubuntu/honeypot/simulations/'
+
+results:
+  processor: file
+  attributes:
+    path: '/home/ubuntu/honeypot/results/'
+
+monitoring:
+  enabled: True
+  interval: 60

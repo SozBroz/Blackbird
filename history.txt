@@ -1,0 +1,393 @@
+    1  ping 8.8.8.8
+    2  apt update && apt upgrade -y
+    3  sudo apt update && apt upgrade -y
+    4  sudo apt upgrade -y
+    5  ls
+    6  sudo su
+    7  ls
+    8  pwd
+    9  git clone https://github.com/darkarnium/kako.git
+   10  l
+   11  cd kako/
+   12  ls
+   13  pip3
+   14  pip
+   15  sudo apt install python3-pip
+   16  pip3 install click requests boto3 cerberus
+   17  pip3 install --upgrade pip
+   18  ls
+   19  nano setup.cfg 
+   20  python3 setup.py 
+   21  python3 setup.py --help-commands
+   22  python3 setup.py build
+   23  ls
+   24  cd build/
+   25  ls
+   26  kako
+   27  cd b
+   28  ls
+   29  cd scripts-3.5/
+   30  ls
+   31  ./kako-master 
+   32  pip3 install kako
+   33  cd ..
+   34  ls
+   35  cd lib/
+   36  ls
+   37  cd kako/
+   38  ls
+   39  cd ../
+   40  ls
+   41  cd ..
+   42  cd scripts-3.5/
+   43  ls
+   44  ./kako-master 
+   45  python3 ./kako-master
+   46  cd ..
+   47  ls
+   48  cd ..
+   49  ls
+   50  python3 setup.py --help-commands
+   51  python3 setup.py install
+   52  sudo python3 setup.py install
+   53  cd
+   54  kako
+   55  kako-master 
+   56  cd /etc
+   57  ls
+   58  kako-master -h
+   59  kako-master --help
+   60  cd
+   61  ls
+   62  cd kako/
+   63  ls
+   64  cd build/
+   65  ls
+   66  cd sc
+   67  cd scripts-3.5/
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd lib
+   72  ls
+   73  cd kako/
+   74  ls
+   75  cd simulation/
+   76  ls
+   77  cd ../..
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd sample/
+   82  ls
+   83  less kako.yaml 
+   84  cd
+   85  ls
+   86  git clone https://github.com/darkarnium/kako-simulations.git
+   87  ls
+   88  cd kako-simulations/
+   89  ls
+   90  kako-master 
+   91  kako-master --help
+   92  cd ..
+   93  ls
+   94  cd kako
+   95  ls
+   96  cd sample
+   97  ls
+   98  less kako.yaml 
+   99  cd
+  100  mkdir honeypot
+  101  cd honeypot/
+  102  cp ~/kako/sample/kako.yaml .
+  103  l
+  104  nano kako.yaml 
+  105  cd ..
+  106  ls
+  107  cd kako-simulations/
+  108  ls
+  109  cd docs
+  110  ls
+  111  cd ..
+  112  ls
+  113  cp 000-LinuxTelnet.yaml ~/honeypot/
+  114  cd
+  115  ls
+  116  cd honeypot/
+  117  ls
+  118  mkdir simulations
+  119  mkdir results
+  120  mkdir logging
+  121  ls
+  122  mv 000-LinuxTelnet.yaml ./simulations/
+  123  ls
+  124  kako-master --help
+  125  kako-master --configuration-file kako.yaml 
+  126  nohup kako-master --configuration-file kako.yaml &
+  127  ls
+  128  cat nohup.out 
+  129  top
+  130  ss -tulp
+  131  ls
+  132  cat nohup.out 
+  133  cd logging/
+  134  ls
+  135  cat kako.log 
+  136  cd ..
+  137  ls
+  138  cd results/
+  139  ls
+  140  less kako.json 
+  141  tail -f kako.json 
+  142  cd ..
+  143  ls
+  144  cat nohup.out 
+  145  rm nohup.out 
+  146  nano kako.yaml 
+  147  cd ..
+  148  ls
+  149  cd kako-simulations/
+  150  ls
+  151  cp ./* ~/honeypot/simulations/
+  152  cd ..
+  153  ls
+  154  cd honeypot/
+  155  ls
+  156  cd simulations/
+  157  ls
+  158  less README.md 
+  159  ls
+  160  less README.md 
+  161  ls
+  162  rm 001-CPEServer.yaml 002-NetGear.yaml 003-D-Link.yaml 004-Rompager.yaml 005-Huawei-uPnP.yaml 006-Realtek-uPnP.yaml 
+  163  ls
+  164  rm 008-Linux-uPnP.yaml 
+  165  rm 009-Linksys.yaml 
+  166  ls
+  167  rm routerlogin.pem 
+  168  ls
+  169  cd ..
+  170  ls
+  171  top
+  172  killall kako-master
+  173  nohup kako-master --configuration-file kako.yaml &
+  174  clear
+  175  ls
+  176  cat nohup.out 
+  177  cd logging/
+  178  ls
+  179  less kako.log 
+  180  cd ..
+  181  ls
+  182  cd results/
+  183  ls
+  184  tail kako.json 
+  185  ls
+  186  echo > kako.json 
+  187  cat kako.json 
+  188  cd ..
+  189  ls
+  190  cd simulations/
+  191  killall kako-master
+  192  nano 000-LinuxTelnet.yaml 
+  193  ls
+  194  nano 007-Generic-uPnP.yaml 
+  195  ls
+  196  cd ..
+  197  ls
+  198  top
+  199  ps -e
+  200  ps -e | grep kako
+  201  ls
+  202  nohup kako-master --configuration-file kako.yaml &
+  203  ls
+  204  cat nohup.out 
+  205  ps -e | grep kako
+  206  killall kako-master
+  207  ps -e | grep kako
+  208  sudo nohup kako-master --configuration-file kako.yaml &
+  209  ls
+  210  cat nohup.out 
+  211  ps -e | grep kako
+  212  killall kako-master
+  213  sudo killall kako-master
+  214  ls
+  215  rm nohup.out 
+  216  ls
+  217  cd simulations/
+  218  ls
+  219  nano 000-LinuxTelnet.yaml 
+  220  cd ..
+  221  ls
+  222  nohup kako-master --configuration-file kako.yaml &
+  223  ls
+  224  cat nohup.out 
+  225  htop
+  226  top
+  227  sudo apt install htop -y
+  228  l
+  229  cd results/
+  230  ls
+  231  tail kako.json 
+  232  ls
+  233  cd ..
+  234  ls
+  235  cd simulations/
+  236  ls
+  237  less 010-TPLink.yaml 
+  238  cd ..
+  239  ls
+  240  cd results/
+  241  ls
+  242  tail kako.json 
+  243  cd ..
+  244  ls
+  245  cd simulations/
+  246  ls
+  247  nano 007-Generic-uPnP.yaml 
+  248  cd .
+  249  cd ..
+  250  cd results/
+  251  tail kako.json 
+  252  netstat -tulpn
+  253  killall kako-master
+  254  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml 
+  255  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  256  ps -e | grep kako
+  257  htop
+  258  netstat -tulpn
+  259  killall kako-master
+  260  sudo killall kako-master
+  261  cd ../simulations/
+  262  ls
+  263  nano 000-LinuxTelnet.yaml 
+  264  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  265  sudo killall kako-master
+  266  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml
+  267  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  268  ls
+  269  cd ..
+  270  ls
+  271  rm nohup.out 
+  272  cd results/
+  273  ls
+  274  cd ..
+  275  ls
+  276  cd logging/
+  277  ls
+  278  tail kako.log 
+  279  cd ..
+  280  ls
+  281  cd results/
+  282  ls
+  283  tail kako.json 
+  284  echo > kako.json 
+  285  tail kako.json 
+  286  cd ..
+  287  ls
+  288  killall kako-master
+  289  sudo killall kako-master
+  290  ls
+  291  cd simulations/
+  292  ls
+  293  nano 010
+  294  nano 010-TPLink.yaml 
+  295  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  296  cd ..
+  297  ls
+  298  cd logging/
+  299  ls
+  300  tail kako.log 
+  301  cd ..
+  302  ls
+  303  cd results/
+  304  ls
+  305  tail kako.json 
+  306  echo > kako.json 
+  307  tail kako.json 
+  308  ls
+  309  tail kako.json 
+  310  cd ..
+  311  ls
+  312  cd logging/
+  313  ls
+  314  less kako.log 
+  315  cd ..
+  316  killall kako-master
+  317  sudo killall kako-master
+  318  cd simulations/
+  319  ls
+  320  nano 010-TPLink.yaml 
+  321  nano 000-LinuxTelnet.yaml 
+  322  ls
+  323  mv 000-LinuxTelnet.yaml 000-LinuxTelnet.yamlBAK
+  324  mv 007-Generic-uPnP.yaml 007-Generic-uPnP.yamlBAK
+  325  mv 010-TPLink.yaml 010-TPLink.yamlBAK
+  326  ls
+  327  cp 000-LinuxTelnet.yamlBAK 002-ms08-67.yaml 
+  328  nano 002-ms08-67.yaml 
+  329  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  330  cd ..
+  331  ls
+  332  cd logging/
+  333  tail kako.log 
+  334  killall kako-master
+  335  sudo killall kako-master
+  336  cd ..
+  337  ls
+  338  cd simulations/
+  339  ls
+  340  mv 000-LinuxTelnet.yamlBAK 000-LinuxTelnet.yaml
+  341  mv 007-Generic-uPnP.yamlBAK 007-Generic-uPnP.yaml 
+  342  mv 010-TPLink.yamlBAK 010-TPLink.yaml
+  343  ls
+  344  rm 002-ms08-67.yaml 
+  345  ls
+  346  sudo kako-master --configuration-file /home/ubuntu/honeypot/kako.yaml &
+  347  cd ..
+  348  ls
+  349  cd logging/
+  350  ls
+  351  tail kako.log 
+  352  cd..
+  353  ;
+  354  cd ..
+  355  ls
+  356  cd results/
+  357  tail kako.json 
+  358  ls
+  359  cd honeypot/
+  360  ls
+  361  cd results/
+  362  ls
+  363  tail kako.json 
+  364  clear
+  365  tail kako.json 
+  366  nano kako.json 
+  367  tail kako.json 
+  368  clear
+  369  tail kako.json 
+  370  ss -tupa
+  371  kilsudo
+  372  ss -tupa
+  373  ip a
+  374  htop
+  375  top
+  376  ls
+  377  cd kako-simulations/
+  378  ls
+  379  ss -tapu
+  380  logout
+  381  clear
+  382  ss -tapu
+  383  top
+  384  ls
+  385  cd kako-simulations/
+  386  ls
+  387  cat 000-LinuxTelnet.yaml 
+  388  cat 006-Realtek-uPnP.yaml 
+  389  history
+  390  history | less
+  391  history | tee history.txt
+  392  cat history.txt 
+  393  history | cut -f3- > history.txt
